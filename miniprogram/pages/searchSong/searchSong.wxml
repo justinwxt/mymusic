@@ -1,0 +1,23 @@
+<view class='page-container'>
+  <view class='input-container'>
+    <input class='search-input' bindconfirm='search' value='{{searchWords}}' placeholder='请输入搜索信息' bindinput='inputKeywords'></input>
+    <image class='search-btn' src='../../images/search.png' bindtap='search'></image>
+  </view>
+  <view class='song-list-container'>
+    <view class='search-title'>搜索结果:</view>
+    <view class='song-item' wx:for="{{searchResults}}" wx:key="index">
+      <view class='song-content'>{{item.songname}}-{{item.singer[0].name}}</view>
+      <view class='add-song' bindtap='showDirs' data-item="{{item}}">添加</view>
+    </view>
+  </view>
+  <!-- 文件夹列表 -->
+  <view class='fix-bg' hidden='{{!isShowDirs}}' bindtap='hideDirs'>
+    <view class='dirs-container'>
+      <view class='dir-item' data-id="{{item._id}}" wx:for="{{dirs}}" wx:key="{{index}}" bindtap='addToDir'>
+        {{item.name}}
+      </view>
+      
+  </view>
+  </view>
+  
+</view>

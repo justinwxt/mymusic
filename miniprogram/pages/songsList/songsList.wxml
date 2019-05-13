@@ -1,0 +1,19 @@
+<view class='box'>
+
+  <scroll-view scroll-x  class='song-container' wx:for="{{songsList}}" wx:key="{{index}}">
+      <view class='item-container'>
+        <view class='item-content'>{{item.songName}}<text>-{{item.singer}}</text></view>
+        <view class='item-control'>
+          <image src='{{item.isPlaying?"../../images/pause.png": "../../images/play.png"}}' data-item="{{item}}" bindtap='palyMusic'></image>
+          <!-- <image src='../../images/stop.png' data-item="{{item}}" bindtap="stopMusic"></image> -->
+        </view>
+        <view class='item-del'>del</view>
+      </view>
+  </scroll-view>
+
+  <view class='buttons-container'>
+    <view class='op-btn' bindtap='toSearchSong'>搜索</view>
+    <!-- <view class='op-btn'>榜单Top100</view>
+    <view class='op-btn'>随机</view> -->
+  </view>
+</view>

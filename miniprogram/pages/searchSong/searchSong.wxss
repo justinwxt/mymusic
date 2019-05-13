@@ -1,0 +1,70 @@
+.page-container{
+  box-sizing: border-box;
+}
+.input-container{
+  height: 120rpx;
+  font-size: 30rpx;
+  display: flex;
+  margin-left: 30rpx;
+  margin-top:30rpx;
+}
+.search-input{
+  line-height: 120rpx;
+  height: 120rpx;
+  flex:1;
+  border-radius: 10rpx;
+  border: 1px solid #ccc;
+}
+.search-btn{
+  flex-basis: 120rpx;
+  height: 120rpx;
+}
+.song-list-container{
+  margin-top: 40rpx;
+}
+.song-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #ccc;
+  padding-left: 20rpx;
+  display: flex;
+}
+.search-title{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.add-song{
+  flex-basis: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#fff;
+  background-color: green;
+  text-align: center;
+}
+.song-content{
+  flex:1;
+}
+.dirs-container{
+  position: absolute;
+  width: 80%;
+  bottom: 40rpx;
+  left:10%;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.fix-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top:0;
+}
+.dir-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  color:skyblue;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}

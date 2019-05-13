@@ -1,0 +1,52 @@
+.box{
+  box-sizing: border-box;
+}
+.song-container{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  border: 1px solid #ccc;
+  width: 750rpx;
+}
+.item-container{
+  width: 900rpx;
+  display: flex;
+
+}
+.item-content{
+  flex: 3;
+  padding-left: 30rpx;
+}
+.item-control{
+  flex:1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.item-control image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.item-del{
+   flex-basis: 150rpx;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+}
+.buttons-container{
+  position: fixed;
+  width: 100%;
+  bottom: 40rpx;
+  left: 0;
+}
+.op-btn{
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  background-color: green;
+  color:#fff;
+  margin:0 auto;
+  margin-top:20rpx;
+  width:340rpx;
+  border: 1px solid #ccc;
+  }
